@@ -1,0 +1,135 @@
+2025-02-25T21:48:47.929-03:00  INFO 14292 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : Starting CinemaApplication using Java 17.0.10 with PID 14292 (C:\Users\FEF\Documents\cinema\build\classes\java\main started by FEF in C:\Users\FEF\Documents\cinema)
+2025-02-25T21:48:47.931-03:00  INFO 14292 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : The following 1 profile is active: "test"
+2025-02-25T21:48:47.982-03:00  INFO 14292 --- [cinema] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-25T21:48:47.983-03:00  INFO 14292 --- [cinema] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-25T21:48:48.540-03:00  INFO 14292 --- [cinema] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-25T21:48:48.605-03:00  INFO 14292 --- [cinema] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2025-02-25T21:48:49.121-03:00  INFO 14292 --- [cinema] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-25T21:48:49.133-03:00  INFO 14292 --- [cinema] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T21:48:49.133-03:00  INFO 14292 --- [cinema] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T21:48:49.171-03:00  INFO 14292 --- [cinema] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T21:48:49.172-03:00  INFO 14292 --- [cinema] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1189 ms
+2025-02-25T21:48:49.280-03:00  INFO 14292 --- [cinema] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T21:48:49.503-03:00  INFO 14292 --- [cinema] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cinema user=SA
+2025-02-25T21:48:49.506-03:00  INFO 14292 --- [cinema] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T21:48:49.559-03:00  INFO 14292 --- [cinema] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T21:48:49.608-03:00  INFO 14292 --- [cinema] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T21:48:49.643-03:00  INFO 14292 --- [cinema] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T21:48:49.943-03:00  INFO 14292 --- [cinema] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-25T21:48:50.017-03:00  INFO 14292 --- [cinema] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T21:48:50.708-03:00  INFO 14292 --- [cinema] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T21:48:50.736-03:00  INFO 14292 --- [cinema] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25T21:48:50.777-03:00  WARN 14292 --- [cinema] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T21:48:51.241-03:00  INFO 14292 --- [cinema] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cinema'
+2025-02-25T21:48:51.294-03:00  INFO 14292 --- [cinema] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-25T21:48:51.335-03:00  INFO 14292 --- [cinema] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-25T21:48:51.342-03:00  INFO 14292 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : Started CinemaApplication in 3.826 seconds (process running for 4.235)
+2025-02-25T21:49:49.707-03:00  INFO 14292 --- [cinema] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-25T21:49:49.707-03:00  INFO 14292 --- [cinema] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-25T21:49:49.708-03:00  INFO 14292 --- [cinema] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-25T22:16:31.583-03:00  INFO 16404 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : Starting CinemaApplication using Java 17.0.10 with PID 16404 (C:\Users\FEF\Documents\cinema\build\classes\java\main started by FEF in C:\Users\FEF\Documents\cinema)
+2025-02-25T22:16:31.585-03:00  INFO 16404 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : The following 1 profile is active: "test"
+2025-02-25T22:16:31.651-03:00  INFO 16404 --- [cinema] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-25T22:16:31.652-03:00  INFO 16404 --- [cinema] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-25T22:16:32.142-03:00  INFO 16404 --- [cinema] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-25T22:16:32.189-03:00  INFO 16404 --- [cinema] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2025-02-25T22:16:32.953-03:00  INFO 16404 --- [cinema] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-25T22:16:32.967-03:00  INFO 16404 --- [cinema] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-25T22:16:32.967-03:00  INFO 16404 --- [cinema] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-25T22:16:33.014-03:00  INFO 16404 --- [cinema] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-25T22:16:33.015-03:00  INFO 16404 --- [cinema] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1363 ms
+2025-02-25T22:16:33.154-03:00  INFO 16404 --- [cinema] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-25T22:16:33.362-03:00  INFO 16404 --- [cinema] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cinema user=SA
+2025-02-25T22:16:33.365-03:00  INFO 16404 --- [cinema] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-25T22:16:33.427-03:00  INFO 16404 --- [cinema] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-25T22:16:33.498-03:00  INFO 16404 --- [cinema] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-25T22:16:33.540-03:00  INFO 16404 --- [cinema] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-25T22:16:33.839-03:00  INFO 16404 --- [cinema] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-25T22:16:33.927-03:00  INFO 16404 --- [cinema] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-25T22:16:34.755-03:00  INFO 16404 --- [cinema] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-25T22:16:34.789-03:00  INFO 16404 --- [cinema] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-25T22:16:35.223-03:00  WARN 16404 --- [cinema] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25T22:16:35.491-03:00  INFO 16404 --- [cinema] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cinema'
+2025-02-25T22:16:35.552-03:00  INFO 16404 --- [cinema] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-25T22:16:35.586-03:00  INFO 16404 --- [cinema] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-25T22:16:35.596-03:00  INFO 16404 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : Started CinemaApplication in 4.437 seconds (process running for 4.826)
+2025-02-26T19:33:39.473-03:00  INFO 11508 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : Starting CinemaApplication using Java 17.0.10 with PID 11508 (C:\IntelliJ_Projects\cinema\build\classes\java\main started by joice in C:\IntelliJ_Projects\cinema)
+2025-02-26T19:33:39.477-03:00  INFO 11508 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : The following 1 profile is active: "test"
+2025-02-26T19:33:39.543-03:00  INFO 11508 --- [cinema] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-26T19:33:39.543-03:00  INFO 11508 --- [cinema] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-26T19:33:40.040-03:00  INFO 11508 --- [cinema] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-26T19:33:40.087-03:00  INFO 11508 --- [cinema] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2025-02-26T19:33:40.823-03:00  INFO 11508 --- [cinema] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-26T19:33:40.834-03:00  INFO 11508 --- [cinema] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-26T19:33:40.834-03:00  INFO 11508 --- [cinema] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-26T19:33:40.873-03:00  INFO 11508 --- [cinema] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-26T19:33:40.873-03:00  INFO 11508 --- [cinema] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+2025-02-26T19:33:40.983-03:00  INFO 11508 --- [cinema] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-26T19:33:41.216-03:00  INFO 11508 --- [cinema] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cinema user=SA
+2025-02-26T19:33:41.223-03:00  INFO 11508 --- [cinema] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-26T19:33:41.283-03:00  INFO 11508 --- [cinema] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-26T19:33:41.333-03:00  INFO 11508 --- [cinema] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-26T19:33:41.368-03:00  INFO 11508 --- [cinema] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-26T19:33:41.661-03:00  INFO 11508 --- [cinema] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-26T19:33:41.738-03:00  INFO 11508 --- [cinema] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-26T19:33:42.599-03:00  INFO 11508 --- [cinema] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-26T19:33:42.643-03:00  INFO 11508 --- [cinema] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26T19:33:43.053-03:00  WARN 11508 --- [cinema] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-26T19:33:43.315-03:00  INFO 11508 --- [cinema] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cinema'
+2025-02-26T19:33:43.383-03:00  INFO 11508 --- [cinema] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-26T19:33:43.413-03:00  INFO 11508 --- [cinema] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-26T19:33:43.426-03:00  INFO 11508 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : Started CinemaApplication in 4.413 seconds (process running for 4.912)
+2025-02-26T19:35:59.693-03:00  INFO 3272 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : Starting CinemaApplication using Java 17.0.10 with PID 3272 (C:\IntelliJ_Projects\cinema\build\classes\java\main started by joice in C:\IntelliJ_Projects\cinema)
+2025-02-26T19:35:59.696-03:00  INFO 3272 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : The following 1 profile is active: "test"
+2025-02-26T19:35:59.788-03:00  INFO 3272 --- [cinema] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-26T19:35:59.788-03:00  INFO 3272 --- [cinema] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-26T19:36:00.503-03:00  INFO 3272 --- [cinema] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-26T19:36:00.563-03:00  INFO 3272 --- [cinema] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-02-26T19:36:01.503-03:00  INFO 3272 --- [cinema] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-26T19:36:01.523-03:00  INFO 3272 --- [cinema] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-26T19:36:01.523-03:00  INFO 3272 --- [cinema] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-26T19:36:01.568-03:00  INFO 3272 --- [cinema] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-26T19:36:01.568-03:00  INFO 3272 --- [cinema] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1780 ms
+2025-02-26T19:36:01.713-03:00  INFO 3272 --- [cinema] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-26T19:36:02.039-03:00  INFO 3272 --- [cinema] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cinema user=SA
+2025-02-26T19:36:02.045-03:00  INFO 3272 --- [cinema] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-26T19:36:02.229-03:00  INFO 3272 --- [cinema] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-26T19:36:02.293-03:00  INFO 3272 --- [cinema] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-26T19:36:02.357-03:00  INFO 3272 --- [cinema] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-26T19:36:02.613-03:00  INFO 3272 --- [cinema] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-26T19:36:02.704-03:00  INFO 3272 --- [cinema] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-26T19:36:03.563-03:00  INFO 3272 --- [cinema] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-26T19:36:03.608-03:00  INFO 3272 --- [cinema] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-26T19:36:04.053-03:00  WARN 3272 --- [cinema] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-26T19:36:04.324-03:00  INFO 3272 --- [cinema] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cinema'
+2025-02-26T19:36:04.398-03:00  INFO 3272 --- [cinema] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-26T19:36:04.434-03:00  INFO 3272 --- [cinema] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-26T19:36:04.443-03:00  INFO 3272 --- [cinema] [restartedMain] com.curso.cinema.CinemaApplication       : Started CinemaApplication in 5.312 seconds (process running for 5.983)
