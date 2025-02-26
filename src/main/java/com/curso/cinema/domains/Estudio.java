@@ -18,15 +18,15 @@ public class Estudio {
     private String nomeEstudio;
 
     @NotNull @NotBlank
-    private String CNPJ;
+    private String cnpj;
 
     public Estudio() {
     }
 
-    public Estudio(Integer id, String nomeEstudio, String CNPJ) {
+    public Estudio(Integer id, String nomeEstudio, String cnpj) {
         this.id = id;
         this.nomeEstudio = nomeEstudio;
-        this.CNPJ = CNPJ;
+        this.cnpj = cnpj;
     }
 
     public Integer getId() {
@@ -45,23 +45,12 @@ public class Estudio {
         this.nomeEstudio = nomeEstudio;
     }
 
-    public String getCNPJ() {
-        return CNPJ;
+    public @NotNull @NotBlank String getCnpj() {
+        return cnpj;
     }
 
-    public void setCNPJ(String CNPJ) {
-        this.CNPJ = CNPJ;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Estudio estudio = (Estudio) o;
-        return Objects.equals(id, estudio.id) && Objects.equals(nomeEstudio, estudio.nomeEstudio) && Objects.equals(CNPJ, estudio.CNPJ);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, nomeEstudio, CNPJ);
+    public void setCnpj(@NotNull @NotBlank String cnpj) {
+        this.cnpj = cnpj;
     }
 }
+

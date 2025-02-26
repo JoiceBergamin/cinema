@@ -18,7 +18,7 @@ public class Filme {
     @NotNull @NotBlank
     private String autorRoteiro;
 
-    @ManyToOne
+    @ManyToOne //varios filmes para um estudio, essa classe é N no banco, por isso puxa o id de estudio
     @JoinColumn(name = "id_estudio")
     private Estudio estudio;
 
