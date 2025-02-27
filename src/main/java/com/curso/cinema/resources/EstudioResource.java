@@ -30,4 +30,10 @@ public class EstudioResource {
         return ResponseEntity.ok().body(new EstudioDTO(obj));
 
     }
+    @GetMapping("/cnpj/{cnpj}")
+    public ResponseEntity<EstudioDTO> findById(@PathVariable String cnpj){
+        Estudio obj = this.estudioService.findbyCnpj(cnpj);
+        return ResponseEntity.ok().body(new EstudioDTO(obj));
+
+    }
 }

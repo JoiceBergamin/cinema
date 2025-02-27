@@ -3,6 +3,7 @@ package com.curso.cinema.services;
 import com.curso.cinema.domains.Estudio;
 import com.curso.cinema.domains.dtos.EstudioDTO;
 import com.curso.cinema.repositories.EstudioRepository;
+import com.curso.cinema.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,11 @@ public class EstudioService {
 
     public Estudio findbyId(int id){
         Optional<Estudio> obj = estudioRepository.findById(id);
-        return obj.orElse(null);
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Estudio não encontrado! Id: " + id));
+    }
+
+    public Estudio findbyCnpj(String cnpj){
+        Optional<Estudio> obj = estudioRepository.findByCnpj(cnpj);
+    return obj.orElseThrow(() -> new ObjectNotFoundException("Estudio não encontrado! cnpj: " + cnpj));
     }
 }
