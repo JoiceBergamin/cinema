@@ -12,10 +12,10 @@ import org.springframework.stereotype.Service;
 public class DBService {
 
     @Autowired
-    private FilmeRepository filmeRepo;
+    private FilmeRepository filmeRepository;
 
     @Autowired
-    private EstudioRepository estudioRepo;
+    private EstudioRepository estudioRepository;
 
     public void initDB() {
 
@@ -29,14 +29,14 @@ public class DBService {
         Filme filme03 = new Filme(null, "Velozes e Furiosos", "Ken Li",estudio03, Nota.BOA);
         Filme filme04 = new Filme(null, "Minions", "Brian Lynch",estudio04, Nota.BOA);
 
-        estudioRepo.save(estudio01);
-        estudioRepo.save(estudio02);
-        estudioRepo.save(estudio03);
-        estudioRepo.save(estudio04);
+        estudioRepository.save(estudio01);
+        estudioRepository.save(estudio02);
+        estudioRepository.save(estudio03);
+        estudioRepository.save(estudio04);
 
-        filmeRepo.save(filme01);
-        filmeRepo.save(filme02);
-        filmeRepo.save(filme03);
-        filmeRepo.save(filme04);
+        filmeRepository.save(filme01);
+        filmeRepository.save(filme02);
+        filmeRepository.save(filme03);
+        filmeRepository.save(filme04);
     }
 }

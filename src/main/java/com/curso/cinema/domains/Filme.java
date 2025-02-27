@@ -21,7 +21,7 @@ public class Filme {
     @ManyToOne //varios filmes para um estudio, essa classe é N no banco, por isso puxa o id de estudio
     @JoinColumn(name = "id_estudio")
     private Estudio estudio;
-
+    //to mapeando o atributo estudio lá na lista de filmes
     @Enumerated(EnumType.ORDINAL)
     @JoinColumn(name = "nota")
     private Nota nota;

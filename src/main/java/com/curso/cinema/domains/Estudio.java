@@ -1,9 +1,13 @@
 package com.curso.cinema.domains;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import org.w3c.dom.stylesheets.LinkStyle;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -19,6 +23,10 @@ public class Estudio {
 
     @NotNull @NotBlank
     private String cnpj;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "estudio")
+    private List<Filme> filmes = new ArrayList<>();
 
     public Estudio() {
     }
@@ -51,6 +59,14 @@ public class Estudio {
 
     public void setCnpj(@NotNull @NotBlank String cnpj) {
         this.cnpj = cnpj;
+    }
+
+    public List<Filme> getFilmes() {
+        return filmes;
+    }
+
+    public void setFilmes(List<Filme> filmes) {
+        this.filmes = filmes;
     }
 }
 
